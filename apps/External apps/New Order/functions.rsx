@@ -1,0 +1,132 @@
+<GlobalFunctions>
+  <SqlQueryUnified
+    id="join"
+    isHidden={false}
+    notificationDuration={4.5}
+    query={include("./lib/join.sql", "string")}
+    resourceDisplayName="retool_db"
+    resourceName="072dd6a3-2d41-4c86-95c9-d6c6021cd0f3"
+    showSuccessToaster={false}
+    showUpdateSetValueDynamicallyToggle={false}
+    updateSetValueDynamically={true}
+    warningCodes={[]}
+  />
+  <SqlQueryUnified
+    id="asset"
+    isHidden={false}
+    isMultiplayerEdited={false}
+    query={include("./lib/asset.sql", "string")}
+    resourceDisplayName="retool_db"
+    resourceName="072dd6a3-2d41-4c86-95c9-d6c6021cd0f3"
+    warningCodes={[]}
+  />
+  <SqlQueryUnified
+    id="order_type"
+    isHidden={false}
+    query={include("./lib/order_type.sql", "string")}
+    resourceDisplayName="retool_db"
+    resourceName="072dd6a3-2d41-4c86-95c9-d6c6021cd0f3"
+    warningCodes={[]}
+  />
+  <SqlQueryUnified
+    id="insert"
+    actionType="INSERT"
+    changeset={
+      '[{"key":"id","value":"{{ order_id.data.max[0]+1 }}"},{"key":"order_type","value":"{{ select2.value }}"},{"key":"date","value":"{{ now.data.now[0] }}"},{"key":"ordered_by","value":"{{ textInput1.value }}"},{"key":"description","value":"{{textArea1.value  }}"},{"key":"deadline","value":"{{ date1.value }}"},{"key":"status","value":"Order placed"},{"key":"asset_id","value":"{{ textInput2.value }}"}]'
+    }
+    editorMode="gui"
+    isHidden={false}
+    isMultiplayerEdited={false}
+    notificationDuration={4.5}
+    resourceDisplayName="retool_db"
+    resourceName="072dd6a3-2d41-4c86-95c9-d6c6021cd0f3"
+    runWhenModelUpdates={false}
+    showSuccessToaster={false}
+    showUpdateSetValueDynamicallyToggle={false}
+    tableName="asset_orders"
+    updateSetValueDynamically={true}
+  >
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="order_type"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="run"
+      params={{
+        ordered: [{ src: "await order_id.trigger()\nquery8.trigger()" }],
+      }}
+      pluginId=""
+      type="script"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="order_id"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="failure"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="order_id"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </SqlQueryUnified>
+  <SqlQueryUnified
+    id="order_id"
+    isHidden={false}
+    query={include("./lib/order_id.sql", "string")}
+    resourceDisplayName="retool_db"
+    resourceName="072dd6a3-2d41-4c86-95c9-d6c6021cd0f3"
+    warningCodes={[]}
+  />
+  <SqlQueryUnified
+    id="now"
+    isHidden={false}
+    query={include("./lib/now.sql", "string")}
+    resourceDisplayName="retool_db"
+    resourceName="072dd6a3-2d41-4c86-95c9-d6c6021cd0f3"
+    warningCodes={[]}
+  />
+  <OpenAPIQuery
+    id="query7"
+    isHidden={false}
+    method="post"
+    notificationDuration={4.5}
+    operationId="chat_meMessage"
+    parameterDynamicStates={'{"channel":false,"text":false}'}
+    parameterMetadata=""
+    parameters={
+      '{"channel":"D0874HLPLDT","text":"Order {{ order_id.data.max[0]+1 }} has been submitted by {{ textInput1.value }} with a deadline of {{ date1.value }}"}'
+    }
+    path="/chat.meMessage"
+    requestBodyMetadata=""
+    resourceDisplayName="orderAlert"
+    resourceName="43eeb55d-ce41-4b23-805a-0bfad2812c1d"
+    showSuccessToaster={false}
+  />
+  <WorkflowRun
+    id="query8"
+    isMultiplayerEdited={false}
+    notificationDuration={4.5}
+    resourceName="WorkflowRun"
+    showSuccessToaster={false}
+    workflowId="4542ea74-0c6a-4247-ac47-15d2d9eb44a5"
+    workflowParams={include("./lib/query8.json", "string")}
+    workflowRunBodyType="json"
+    workflowRunExecutionType="async"
+  />
+</GlobalFunctions>
