@@ -188,6 +188,7 @@
       clearChangesetOnSave={true}
       data="{{ join.data }}"
       defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
+      defaultSort={[{ object: { columnId: "c8cda", direction: "desc" } }]}
       emptyMessage="No rows found"
       enableSaveActions={true}
       linkedFilterId="filter1"
