@@ -1,0 +1,72 @@
+{
+  "date1": {
+    "container": "form1",
+    "row": 0.8,
+    "height": 0.2,
+    "width": 7
+  },
+  "form1": {
+    "container": "moduleContainer",
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "formButton1": {
+    "container": "form1",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "formTitle1": {
+    "container": "form1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 9
+  },
+  "image1": {
+    "container": "form1",
+    "col": 7,
+    "height": 6,
+    "width": 5
+  },
+  "moduleContainer": {
+    "height": 9,
+    "width": 5
+  },
+  "select1": {
+    "container": "form1",
+    "height": 0.2,
+    "width": 7
+  },
+  "select2": {
+    "container": "form1",
+    "row": 0.4,
+    "height": 0.2,
+    "width": 7
+  },
+  "textArea1": {
+    "container": "form1",
+    "row": 1,
+    "height": 1,
+    "width": 7
+  },
+  "textInput1": {
+    "container": "form1",
+    "row": 0.6,
+    "height": 0.2,
+    "width": 7
+  },
+  "textInput2": {
+    "container": "form1",
+    "row": 0.2,
+    "height": 0.2,
+    "width": 7
+  }
+}

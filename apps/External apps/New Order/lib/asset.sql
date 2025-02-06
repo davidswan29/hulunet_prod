@@ -1,0 +1,1 @@
+select aid, name, media from asset_management_library
