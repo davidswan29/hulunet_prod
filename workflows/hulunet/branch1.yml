@@ -1,0 +1,113 @@
+id: branch1
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - allowedGroupIds: []
+    - streamResponse: false
+    - lastReceivedFromResourceAt: null
+    - isFunction: false
+    - functionParameters: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - functionDescription: null
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunExecutionType: sync
+    - showFailureToaster: true
+    - query: |-
+        if (userTask1.data.approved == true) {
+          executePathAtMostOnce('0')
+        }
+        else { executePathAtMostOnce('1') }
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - queryRunOnSelectorUpdate: false
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - _additionalScope: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - editorMode: sql
+    - queryRunTime: null
+    - changesetObject: ''
+    - offlineOptimisticResponse: null
+    - errorTransformer: return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: return data
+    - events: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - functionIsSync: null
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2025-02-05T22:06:58.813Z
+blockData:
+  top: 48
+  left: 2608
+  uuid: c85ca45f-9ba2-495d-aadc-841a29c6db7f
+  options:
+    conditions:
+      - id: 18b77f62-65fa-49e1-bc13-f33704bfeb02
+        type: if
+        statement: userTask1.data.approved == true
+        outgoingPortId: bdc6aec8-4a05-483d-bd58-d478d0915a26
+      - id: 729934df-2de2-467e-874a-0e5b58ce0b47
+        type: else
+        statement: ''
+        outgoingPortId: 541f38fb-8abb-4340-86c4-c2b4b4293fbf
+  pluginId: branch1
+  blockType: conditional
+  editorType: JavascriptQuery
+  onboarding: false
+  isMinimized: false
+  resourceName: JavascriptQuery
+  incomingPorts: []
+  outgoingPorts:
+    - id: bdc6aec8-4a05-483d-bd58-d478d0915a26
+      name: '0'
+      type: conditional
+    - id: 541f38fb-8abb-4340-86c4-c2b4b4293fbf
+      name: '1'
+      type: conditional
+  incomingOnSuccessEdges:
+    - f3667dfb-942c-49c5-9dc6-306998bffc1f

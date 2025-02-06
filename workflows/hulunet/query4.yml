@@ -1,0 +1,117 @@
+id: query4
+type: datasource
+subtype: SMTPQuery
+resourceName: retool_email
+resourceDisplayName: retool_email
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - allowedGroupIds: []
+    - toEmail: dswan@retool.com
+    - streamResponse: false
+    - body: >-
+
+        I hope this message finds you well. I would like to assign a task
+        related to order approvals. There is an order that requires manual
+        review as it does not pull from the existing assets in the library and
+        will incur development costs. Please review below.
+
+
+        {{ userTask1.taskURL }}
+
+
+        Thank you for your assistance.
+    - lastReceivedFromResourceAt: null
+    - isFunction: false
+    - functionParameters: null
+    - queryDisabledMessage: ''
+    - attachment: |-
+        [{
+        data: {{ code1.data }},
+        name: 'order.csv',
+        contentType: 'text/csv'
+        }]
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - functionDescription: null
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - showCcBcc: false
+    - runWhenModelUpdates: false
+    - workflowRunExecutionType: sync
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: ''
+    - showReplyTo: false
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - queryRunOnSelectorUpdate: false
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - subject: Task Assigned
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - offlineOptimisticResponse: null
+    - errorTransformer: return data.error
+    - finished: null
+    - confirmationMessage: null
+    - fromEmail: ''
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - replyToEmail: ''
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: return data
+    - events: []
+    - queryTimeout: '10000'
+    - bccEmail: ''
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - ccEmail: ''
+    - bodyType: text
+    - functionIsSync: null
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2025-02-06T01:03:59.512Z
+blockData:
+  top: 352
+  left: 2608
+  uuid: 71ba5043-e954-4794-ac96-ef9c1b44f745
+  pluginId: query4
+  blockType: default
+  editorType: SMTPQuery
+  resourceName: retool_email
+  incomingPorts:
+    - portId: 676faf06-b71e-495d-8c7a-b986ecd1d041
+      blockId: f3667dfb-942c-49c5-9dc6-306998bffc1f
+  incomingOnSuccessEdges: []

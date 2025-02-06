@@ -1,0 +1,113 @@
+id: query2
+type: datasource
+subtype: SqlQueryUnified
+resourceName: 072dd6a3-2d41-4c86-95c9-d6c6021cd0f3
+resourceDisplayName: retool_db
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - allowedGroupIds: []
+    - streamResponse: false
+    - records: ''
+    - lastReceivedFromResourceAt: null
+    - isFunction: false
+    - databasePasswordOverride: ''
+    - functionParameters: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - functionDescription: null
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunExecutionType: sync
+    - showFailureToaster: true
+    - query: S
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - queryRunOnSelectorUpdate: false
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - recordId: ''
+    - importedQueryInputs:
+        ordered: []
+    - _additionalScope: []
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - filterBy: '[{"key":"id","value":"{{ query1.data[0].id }}","operation":"="}]'
+    - requestSentTimestamp: null
+    - databaseHostOverride: ''
+    - metadata: null
+    - editorMode: gui
+    - queryRunTime: null
+    - actionType: UPDATE_BY
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - offlineOptimisticResponse: null
+    - errorTransformer: return data.error
+    - finished: null
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: '[{"key":"status","value":"In progress"}]'
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - databaseWarehouseOverride: ''
+    - enableBulkUpdates: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - overrideOrgCacheForUserCache: false
+    - bulkUpdatePrimaryKey: ''
+    - runWhenPageLoads: false
+    - transformer: return data
+    - events: []
+    - tableName: asset_orders
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - functionIsSync: null
+    - databaseUsernameOverride: ''
+    - databaseRoleOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2025-02-06T00:50:15.678Z
+blockData:
+  top: 48
+  left: 3120
+  uuid: 80a050c7-bb95-47c6-99d3-2d4fc0787b41
+  pluginId: query2
+  blockType: default
+  dimensions:
+    width: 384
+    height: 528
+  editorType: SqlQueryUnified
+  resourceName: 072dd6a3-2d41-4c86-95c9-d6c6021cd0f3
+  incomingPorts:
+    - portId: bdc6aec8-4a05-483d-bd58-d478d0915a26
+      blockId: c85ca45f-9ba2-495d-aadc-841a29c6db7f
+  incomingOnSuccessEdges: []
