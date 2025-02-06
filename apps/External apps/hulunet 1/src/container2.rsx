@@ -256,7 +256,7 @@
         editableOptions={{}}
         format="tags"
         formatOptions={{ automaticColors: true }}
-        hidden="false"
+        hidden="true"
         label="Answer"
       />
     </KeyValue>
