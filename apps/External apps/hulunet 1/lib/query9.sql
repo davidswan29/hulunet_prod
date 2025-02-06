@@ -1,0 +1,1 @@
+select date(date) from asset_orders order by date asc
