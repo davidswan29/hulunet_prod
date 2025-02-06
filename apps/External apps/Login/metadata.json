@@ -1,0 +1,30 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "b710942c-e433-11ef-adf0-938973e0f200",
+  "appTemplate": {
+    "appThemeId": 120997,
+    "inAppRetoolPillAppearance": "HIDE_MENU",
+    "pageCodeFolders": {
+      "object": {
+        "page1": {
+          "array": []
+        }
+      }
+    },
+    "rootScreen": "page1",
+    "appTesting": {
+      "object": {
+        "tests": {
+          "object": {}
+        },
+        "testSuites": {
+          "array": []
+        }
+      }
+    },
+    "appThemeName": "Dan Flash",
+    "version": "3.150.0",
+    "experimentalDataTabEnabled": true
+  }
+}
