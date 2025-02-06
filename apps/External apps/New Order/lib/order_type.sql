@@ -1,0 +1,1 @@
+select distinct(initcap(order_type)) from asset_orders

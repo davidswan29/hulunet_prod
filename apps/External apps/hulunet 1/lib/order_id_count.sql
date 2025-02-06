@@ -1,0 +1,1 @@
+select max(id), count(*) from asset_orders
