@@ -509,12 +509,6 @@
     "row": 0.2,
     "height": 0.2
   },
-  "textInput2": {
-    "row": 1.2,
-    "col": 1,
-    "height": 0.2,
-    "width": 4
-  },
   "textInput3": {
     "container": "form1",
     "row": 0.4,
