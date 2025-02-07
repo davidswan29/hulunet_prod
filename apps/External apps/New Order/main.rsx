@@ -40,6 +40,7 @@
             labels="{{ item.name }}"
             overlayMaxHeight={375}
             placeholder="Select from Asset Library"
+            showClear={true}
             showSelectionIndicator={true}
             values="{{ item.aid }}"
           />
@@ -80,9 +81,11 @@
             id="date1"
             dateFormat="MMM d, yyyy"
             datePlaceholder="{{ self.dateFormat.toUpperCase() }}"
-            hideLabel={true}
+            hideLabel={false}
             iconBefore="bold/interface-calendar"
-            label="Deadline"
+            label=""
+            labelPosition="top"
+            textBefore="Deadline"
             value="{{ new Date() }}"
           />
           <TextArea

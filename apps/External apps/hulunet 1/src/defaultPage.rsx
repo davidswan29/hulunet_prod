@@ -150,14 +150,6 @@
     padding="8px 12px"
     type="main"
   >
-    <Filter
-      id="filter1"
-      linkedTableId="table2"
-      linkToTable={true}
-      style={{
-        ordered: [{ background: "canvas" }, { border: "surfacePrimary" }],
-      }}
-    />
     <TextInput
       id="textInput1"
       iconAfter="bold/interface-search"
@@ -166,6 +158,14 @@
       labelPosition="top"
       placeholder="Search"
       showClear={true}
+    />
+    <Filter
+      id="filter1"
+      linkedTableId="table2"
+      linkToTable={true}
+      style={{
+        ordered: [{ background: "canvas" }, { border: "surfacePrimary" }],
+      }}
     />
     <Button
       id="button2"
@@ -188,6 +188,7 @@
       clearChangesetOnSave={true}
       data="{{ join.data }}"
       defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
+      defaultSort={[{ object: { columnId: "c8cda", direction: "desc" } }]}
       emptyMessage="No rows found"
       enableSaveActions={true}
       linkedFilterId="filter1"

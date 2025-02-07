@@ -4,7 +4,7 @@
   "pageUuid": "bd105cc4-e30a-11ef-9111-b376efdaf17d",
   "appTemplate": {
     "isGlobalWidget": true,
-    "version": "3.150.0",
+    "version": "3.151.0",
     "experimentalDataTabEnabled": true
   }
 }
