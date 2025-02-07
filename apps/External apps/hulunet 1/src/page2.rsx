@@ -144,6 +144,7 @@
       overflowType="pagination"
       primaryKeyColumnId="35a79"
       rowHeight="medium"
+      serverPaginated={true}
       showBorder={true}
       showFooter={true}
       showHeader={true}
