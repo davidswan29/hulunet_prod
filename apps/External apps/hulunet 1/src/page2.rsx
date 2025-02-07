@@ -108,6 +108,18 @@
       },
     ]}
   />
+  <SqlQueryUnified
+    id="assetLibrary"
+    isHidden={false}
+    notificationDuration={4.5}
+    query={include("../lib/assetLibrary.sql", "string")}
+    resourceDisplayName="retool_db"
+    resourceName="072dd6a3-2d41-4c86-95c9-d6c6021cd0f3"
+    showSuccessToaster={false}
+    showUpdateSetValueDynamicallyToggle={false}
+    updateSetValueDynamically={true}
+    warningCodes={[]}
+  />
   <Include src="./modalFrame2.rsx" />
   <Frame
     id="$main3"
@@ -118,30 +130,12 @@
     sticky={null}
     type="main"
   >
-    <TextInput
-      id="textInput2"
-      label=""
-      labelPosition="top"
-      placeholder="Search"
-      showClear={true}
-    />
     <Table
       id="table3"
       actionsOverflowPosition={1}
       cellSelection="none"
       clearChangesetOnSave={true}
-      data="{{ assetsPagination.data }}"
-      defaultFilters={{
-        0: {
-          ordered: [
-            { id: "6d708" },
-            { columnId: "d04ce" },
-            { operator: "=" },
-            { value: "{{ listView1.instanceValues }}" },
-            { disabled: false },
-          ],
-        },
-      }}
+      data="{{ assetLibrary.data }}"
       defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
       emptyMessage="No rows found"
       enableSaveActions={true}
@@ -150,13 +144,12 @@
       overflowType="pagination"
       primaryKeyColumnId="35a79"
       rowHeight="medium"
-      searchTerm="{{ textInput2.value }}"
-      serverPaginated={true}
       showBorder={true}
       showFooter={true}
       showHeader={true}
       style={{ background: "canvas" }}
-      templatePageSize="25"
+      templatePageSize="25
+"
       toolbarPosition="bottom"
     >
       <Column
@@ -171,8 +164,7 @@
         label="Asset ID"
         placeholder="Enter value"
         position="center"
-        size={100}
-        summaryAggregationMode="none"
+        size={63.1875}
       />
       <Column
         id="d5a78"
@@ -183,8 +175,7 @@
         label="Name"
         placeholder="Enter value"
         position="center"
-        size={136}
-        summaryAggregationMode="none"
+        size={78.4375}
       />
       <Column
         id="e870d"
@@ -196,8 +187,7 @@
         label="Type"
         placeholder="Select option"
         position="center"
-        size={164}
-        summaryAggregationMode="none"
+        size={132.796875}
         valueOverride="{{ _.startCase(item) }}"
       />
       <Column
@@ -210,8 +200,7 @@
         label="Media"
         position="center"
         referenceId="Media"
-        size={100}
-        summaryAggregationMode="none"
+        size={237.796875}
         textColor="rgba(34, 22, 22, 1)"
         valueOverride="{{item}}"
       >
@@ -234,8 +223,7 @@
         label="Description"
         placeholder="Enter value"
         position="center"
-        size={233}
-        summaryAggregationMode="none"
+        size={288.921875}
       />
       <Column
         id="128e1"
@@ -246,8 +234,7 @@
         label="Language"
         placeholder="Enter value"
         position="center"
-        size={100}
-        summaryAggregationMode="none"
+        size={85.40625}
       />
       <Column
         id="8b3d7"
@@ -258,8 +245,7 @@
         label="Country"
         placeholder="Enter value"
         position="center"
-        size={100}
-        summaryAggregationMode="none"
+        size={77.015625}
       />
       <Column
         id="df6df"
@@ -278,8 +264,7 @@
         label="Spend"
         placeholder="Enter value"
         position="center"
-        size={100}
-        summaryAggregationMode="none"
+        size={81.90625}
       />
       <Action id="6a8fa" icon="bold/shopping-cart-3-alternate" label="Action 1">
         <Event
