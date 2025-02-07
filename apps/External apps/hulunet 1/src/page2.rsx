@@ -144,12 +144,12 @@
       overflowType="pagination"
       primaryKeyColumnId="35a79"
       rowHeight="medium"
+      serverPaginated={true}
       showBorder={true}
       showFooter={true}
       showHeader={true}
       style={{ background: "canvas" }}
-      templatePageSize="25
-"
+      templatePageSize="25"
       toolbarPosition="bottom"
     >
       <Column
