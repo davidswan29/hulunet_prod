@@ -3,6 +3,7 @@
   _customShortcuts={[]}
   _hashParams={[]}
   _searchParams={[]}
+  browserTitle=""
   title="Admin"
   urlSlug="page3"
 >

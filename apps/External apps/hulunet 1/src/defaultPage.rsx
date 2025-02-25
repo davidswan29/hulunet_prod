@@ -3,6 +3,7 @@
   _customShortcuts={[]}
   _hashParams={[]}
   _searchParams={[]}
+  browserTitle=""
   title="Order Manager"
   urlSlug=""
 >
@@ -216,21 +217,6 @@
         position="center"
         size={89.484375}
         summaryAggregationMode="none"
-      />
-      <Column
-        id="02a73"
-        alignment="left"
-        editable={false}
-        format="tag"
-        formatOptions={{ automaticColors: true }}
-        groupAggregationMode="none"
-        key="order_type"
-        label="Order type"
-        placeholder="Select option"
-        position="center"
-        size={173.90625}
-        summaryAggregationMode="none"
-        valueOverride="{{ _.startCase(item) }}"
       />
       <Column
         id="d4377"
