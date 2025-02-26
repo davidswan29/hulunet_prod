@@ -232,20 +232,6 @@
         summaryAggregationMode="none"
       />
       <Column
-        id="c22fb"
-        alignment="left"
-        format="tag"
-        formatOptions={{ automaticColors: true }}
-        groupAggregationMode="none"
-        key="status"
-        label="Status"
-        placeholder="Select option"
-        position="center"
-        size={131}
-        summaryAggregationMode="none"
-        valueOverride="{{ _.startCase(item) }}"
-      />
-      <Column
         id="2a312"
         alignment="right"
         editableOptions={{ showStepper: true }}
