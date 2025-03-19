@@ -20,6 +20,7 @@
         }
       }
     },
+    "serializedLayout": null,
     "rootScreen": "defaultPage",
     "version": "3.151.0",
     "experimentalDataTabEnabled": true
