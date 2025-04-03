@@ -3,6 +3,7 @@
   _customShortcuts={[]}
   _hashParams={[]}
   _searchParams={[]}
+  browserTitle=""
   title="Asset Manager"
   urlSlug=""
 >
@@ -96,16 +97,12 @@
     resourceDisplayName="retool_ai"
     resourceName="retool_ai"
     runWhenModelUpdates={true}
+    showFailureToaster={false}
     showSuccessToaster={false}
     vectorModeEnabled={true}
     vectorNamespaceIds={["f13f9563-1a57-46b9-b5bf-c4a78ae1efe9"]}
     vectorNamespaceIdsFilters={[
-      {
-        ordered: [
-          { namespaceId: "f13f9563-1a57-46b9-b5bf-c4a78ae1efe9" },
-          { filters: [] },
-        ],
-      },
+      { namespaceId: "f13f9563-1a57-46b9-b5bf-c4a78ae1efe9", filters: [] },
     ]}
   />
   <SqlQueryUnified
