@@ -138,6 +138,7 @@
   <WorkflowRun
     id="query18"
     resourceName="WorkflowRun"
+    showFailureToaster={false}
     workflowId="4542ea74-0c6a-4247-ac47-15d2d9eb44a5"
     workflowRunExecutionType="async"
   />
