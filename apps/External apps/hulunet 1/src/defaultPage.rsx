@@ -206,11 +206,12 @@
       <Column
         id="c8cda"
         alignment="right"
-        editable={false}
+        editable="false"
         editableOptions={{ showStepper: true }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
+        hidden="true"
         key="id"
         label="Order ID
 "
