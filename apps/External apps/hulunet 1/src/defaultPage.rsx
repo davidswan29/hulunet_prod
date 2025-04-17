@@ -211,7 +211,7 @@
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
-        hidden="true"
+        hidden="false"
         key="id"
         label="Order ID
 "
