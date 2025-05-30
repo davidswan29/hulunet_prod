@@ -1,0 +1,103 @@
+id: query5
+type: datasource
+subtype: OpenAPIQuery
+resourceName: df3f4920-b5c3-4473-9e6a-7c9575938d8a
+resourceDisplayName: orderInProgress
+template:
+  queryRefreshTime: ''
+  requestBodyMetadata: ''
+  method: post
+  allowedGroupIds: []
+  streamResponse: false
+  operationId: chat_postMessage
+  lastReceivedFromResourceAt: null
+  isFunction: false
+  functionParameters: null
+  queryDisabledMessage: ''
+  servedFromCache: false
+  server: ''
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  path: /chat.postMessage
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  runWhenModelUpdates: false
+  autoPaginate: false
+  workflowRunExecutionType: sync
+  showFailureToaster: true
+  query: ''
+  playgroundQueryUuid: ''
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  parameters: >-
+    {"channel":"C047TSRLGMV","text":"Order {{ query1.data[0].id }} has been
+    approved and is In Progress"}
+  data: null
+  specPathOverride: ''
+  importedQueryInputs:
+    ordered: []
+  isImported: false
+  showSuccessToaster: true
+  cacheKeyTtl: ''
+  requestSentTimestamp: null
+  metadata: null
+  requestBodyDynamicStates: ''
+  queryRunTime: null
+  changesetObject: ''
+  requestBody: ''
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  specBasePath: ''
+  finished: null
+  confirmationMessage: null
+  isFetching: false
+  changeset: ''
+  rawData: null
+  queryTriggerDelay: '0'
+  resourceTypeOverride: slackopenapi
+  watchedParams: []
+  serverVariables: ''
+  enableErrorTransformer: false
+  autoPaginateLimit: 500
+  showLatestVersionUpdatedWarning: false
+  timestamp: 0
+  importedQueryDefaults:
+    ordered: []
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  parameterDynamicStates: >-
+    {"attachments":false,"blocks":false,"channel":true,"icon_emoji":false,"icon_url":false,"link_names":false,"mrkdwn":false,"parse":false,"reply_broadcast":false,"text":false,"thread_ts":false,"unfurl_links":false,"unfurl_media":false,"username":false}
+  parameterMetadata: ''
+  overrideOrgCacheForUserCache: false
+  runWhenPageLoads: false
+  transformer: return data
+  events: []
+  queryTimeout: '10000'
+  workflowId: null
+  requireConfirmation: false
+  queryFailureConditions: ''
+  changesetIsObject: false
+  enableCaching: false
+  allowedGroups: []
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+createdAt: 2025-02-06T21:50:58.190Z
+blockData:
+  top: 48
+  left: 3632
+  uuid: 67e2a139-b48a-4094-abf9-1899a59045f2
+  pluginId: query5
+  blockType: default
+  editorType: OpenAPIQuery
+  resourceName: df3f4920-b5c3-4473-9e6a-7c9575938d8a
+  incomingOnSuccessEdges:
+    - 80a050c7-bb95-47c6-99d3-2d4fc0787b41
