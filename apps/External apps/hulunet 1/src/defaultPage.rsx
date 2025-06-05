@@ -6,7 +6,7 @@
   browserTitle=""
   title="Order Manager"
   urlSlug=""
-  uuid="6b271cc7-4a14-4077-bd0c-5d2b91dd7f5c"
+  uuid="67304705-d0b5-4610-b655-9f59499fd3e6"
 >
   <SqlQueryUnified
     id="update"
@@ -201,7 +201,12 @@
       showBorder={true}
       showFooter={true}
       showHeader={true}
-      style={{ background: "canvas" }}
+      style={{
+        background: "canvas",
+        headerFontSize: "h4Font",
+        headerFontWeight: "h4Font",
+        headerFontFamily: "h4Font",
+      }}
       toolbarPosition="bottom"
     >
       <Column
