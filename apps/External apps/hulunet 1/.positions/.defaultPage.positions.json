@@ -50,7 +50,7 @@
     }
   },
   "container2": {
-    "row": 18.8,
+    "row": 2,
     "height": 0.2,
     "width": 12,
     "stackPosition": {
@@ -196,13 +196,8 @@
       }
     }
   },
-  "table2": {
-    "row": 1.8,
-    "height": 17,
-    "width": 8
-  },
   "text1": {
-    "row": 19,
+    "row": 2.2,
     "col": 9,
     "height": 0.6
   },

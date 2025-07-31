@@ -6,7 +6,7 @@
   browserTitle=""
   title="Asset Manager"
   urlSlug=""
-  uuid="d6848042-ebf0-4252-af02-8b42b23acebf"
+  uuid="7dd9647d-a76a-4844-a975-69a13cdc2592"
 >
   <SqlQueryUnified
     id="assetsPagination"
