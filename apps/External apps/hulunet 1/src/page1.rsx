@@ -6,6 +6,7 @@
   browserTitle=""
   title="Metrics"
   urlSlug=""
+  uuid="6d23ff93-e608-4c49-a21f-99fe6a4c23d7"
 >
   <SqlQueryUnified
     id="orderCount"
