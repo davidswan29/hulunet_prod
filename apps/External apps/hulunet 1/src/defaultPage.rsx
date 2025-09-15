@@ -6,6 +6,7 @@
   browserTitle=""
   title="Order Manager"
   urlSlug=""
+  uuid="8388868c-0956-4922-92c0-38870f3d1d8e"
 >
   <SqlQueryUnified
     id="update"
