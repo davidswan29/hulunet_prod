@@ -3,7 +3,7 @@
   "version": "43.0.9",
   "pageUuid": "dca12024-e28c-11ef-9069-c7db260ffb25",
   "appTemplate": {
-    "appThemeId": 136392,
+    "appThemeId": -1,
     "pageCodeFolders": {
       "object": {
         "page1": {
@@ -21,7 +21,7 @@
       }
     },
     "rootScreen": "defaultPage",
-    "version": "3.189.0",
+    "version": "3.286.0",
     "experimentalDataTabEnabled": true
   }
 }

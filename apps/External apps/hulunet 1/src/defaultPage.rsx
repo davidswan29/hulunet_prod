@@ -6,6 +6,7 @@
   browserTitle=""
   title="Order Manager"
   urlSlug=""
+  uuid="44ea2587-06f5-49ed-902e-2e0d9676081f"
 >
   <SqlQueryUnified
     id="update"
@@ -152,15 +153,6 @@
     padding="8px 12px"
     type="main"
   >
-    <TextInput
-      id="textInput1"
-      iconAfter="bold/interface-search"
-      iconBefore="bold/interface-setting-menu-1"
-      label=""
-      labelPosition="top"
-      placeholder="Search"
-      showClear={true}
-    />
     <Filter
       id="filter1"
       linkedTableId="table2"
