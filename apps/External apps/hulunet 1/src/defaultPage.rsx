@@ -6,7 +6,7 @@
   browserTitle=""
   title="Order Manager"
   urlSlug=""
-  uuid="74362569-ef4e-4a83-b500-5fc914078c98"
+  uuid="a40034b2-e017-4a05-938e-cb437e6a7838"
 >
   <SqlQueryUnified
     id="update"
@@ -159,7 +159,7 @@
       iconBefore="bold/interface-setting-menu-1"
       label=""
       labelPosition="top"
-      placeholder="Search"
+      placeholder="Search Table"
       showClear={true}
     />
     <Filter
