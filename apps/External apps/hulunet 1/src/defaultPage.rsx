@@ -6,7 +6,7 @@
   browserTitle=""
   title="Order Manager"
   urlSlug=""
-  uuid="1fd822a0-6a6e-4a27-b6ea-95a381aefe49"
+  uuid="44fd0c90-2ae3-4f56-90ce-a85ed568903b"
 >
   <SqlQueryUnified
     id="update"
@@ -144,7 +144,6 @@
     workflowRunExecutionType="async"
   />
   <Include src="./drawerFrame1.rsx" />
-  <Include src="./modalFrame1.rsx" />
   <Frame
     id="$main"
     enableFullBleed={false}
@@ -153,15 +152,6 @@
     padding="8px 12px"
     type="main"
   >
-    <TextInput
-      id="textInput1"
-      iconAfter="bold/interface-search"
-      iconBefore="bold/interface-setting-menu-1"
-      label=""
-      labelPosition="top"
-      placeholder="Search"
-      showClear={true}
-    />
     <Filter
       id="filter1"
       linkedTableId="table2"

@@ -163,23 +163,6 @@
       }
     }
   },
-  "modalCloseButton1": {
-    "rowGroup": "header",
-    "subcontainer": "modalFrame1",
-    "col": 9,
-    "height": 1
-  },
-  "modalTitle1": {
-    "rowGroup": "header",
-    "subcontainer": "modalFrame1",
-    "height": 0.6,
-    "width": 9
-  },
-  "newOrder2": {
-    "subcontainer": "modalFrame1",
-    "height": 1.8,
-    "width": 12
-  },
   "progressCircle1": {
     "container": "container2",
     "subcontainer": "63216",
@@ -253,9 +236,5 @@
   "text5": {
     "row": 30.2,
     "height": 0.6
-  },
-  "textInput1": {
-    "row": 0.2,
-    "height": 0.2
   }
 }
