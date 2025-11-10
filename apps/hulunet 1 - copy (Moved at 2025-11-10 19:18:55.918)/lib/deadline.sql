@@ -1,0 +1,1 @@
+select now() as today, now() + INTERVAL '45 days' as deadline;
