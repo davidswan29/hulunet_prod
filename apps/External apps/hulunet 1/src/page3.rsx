@@ -6,6 +6,7 @@
   browserTitle=""
   title="Admin"
   urlSlug="page3"
+  uuid="25517d82-835f-49b7-8bec-30452c353617"
 >
   <Frame
     id="$main4"
